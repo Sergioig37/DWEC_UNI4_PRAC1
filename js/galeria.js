@@ -1,5 +1,6 @@
 export default class Galeria{
-    constructor(cantidadImagenes){
+
+    constructor(){
         this._imagenes = ["foto1","foto2","foto3","foto4","foto5","foto6","foto7"];
         this._indice = parseInt(0);
     }
