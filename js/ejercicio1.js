@@ -18,7 +18,8 @@ function init() {
     anterior.addEventListener("click", irAnterior);
     ultima.addEventListener("click", irUltima);
 
-  s
+    // siguiente.addEventListener("keydown", irSiguienteKey);
+    // anterior.addEventListener("keydown", irAnteriorKey);
 
 
     ultima.classList.add("habilitado");
