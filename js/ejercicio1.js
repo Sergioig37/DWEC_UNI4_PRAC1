@@ -117,30 +117,46 @@ function deshabilitarHabilitar() {
         case (0):
             //botones de anterior y primera deshabilitados porque ya estamos en la primera
             //y porque no podemos ir más hacia atrás
-            primera.className = "deshabilitado";
-            anterior.className = "deshabilitado";
+            primera.classList.remove("habilitado");
+            primera.classList.add("deshabilitado");
+            anterior.classList.remove("habilitado");
+            anterior.classList.add("deshabilitado");
             //botones de última y siguiente habilitados porque nos podemos mover hacia adelante
-            ultima.className = "habilitado";
-            siguiente.className = "habilitado";
+            ultima.classList.remove("deshabilitado");
+            ultima.classList.add("habilitado");
+            siguiente.classList.remove("deshabilitado");
+            siguiente.classList.add("habilitado");
+
+            
             //y el break para que pare
             break;
         //si estamos en la última imagen
         case (galeria.Imagenes.length - 1):
             //no podemos volver a la última ( ya estamos en ella) y no podemos seguir adelante
-            ultima.className = "deshabilitado";
-            siguiente.className = "deshabilitado";
+
+            ultima.classList.remove("habilitado");
+            ultima.classList.add("deshabilitado");
+            siguiente.classList.remove("habilitado");
+            siguiente.classList.add("deshabilitado");
+
             //pero si que podemos ir a la primera e ir hacia atrás
-            primera.className = "habilitado";
-            anterior.className = "habilitado";
+            primera.classList.remove("deshabilitado");
+            primera.classList.add("habilitado");
+            anterior.classList.remove("deshabilitado");
+            anterior.classList.add("habilitado");
             //break para no seguir
             break;
         //y si no es ninguno de los otros dos casos 
         default:
             //por defecto todo está habilitado
-            ultima.className = "habilitado";
-            siguiente.className = "habilitado";
-            primera.className = "habilitado";
-            anterior.className = "habilitado";
+            ultima.classList.remove("deshabilitado");
+            ultima.classList.add("habilitado");
+            siguiente.classList.remove("deshabilitado");
+            siguiente.classList.add("habilitado");
+            primera.classList.remove("deshabilitado");
+            primera.classList.add("habilitado");
+            anterior.classList.remove("deshabilitado");
+            anterior.classList.add("habilitado");
             break;
 
     }
