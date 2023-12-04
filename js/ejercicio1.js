@@ -36,13 +36,7 @@ function init() {
 
     //tardé un rato en darme cuenta de que era la ventanala que tenía que tener el evento y no los botones
     window.addEventListener("keydown", moverseKeys);
-    window.addEventListener("keydown", moverseKeys);
 
-    //a todos los botones les damos las clases habilitado por defecto
-    ultima.classList.add("habilitado");
-    siguiente.classList.add("habilitado");
-    primera.classList.add("habilitado");
-    anterior.classList.add("habilitado"); 
      //según en que imagen estemos habilitamos o deshabilitamos los botones necesarios
      //esto es por si acaso la imagen aleatoria es la primera o la última
      //así se deshabilitan los botones adecuados
