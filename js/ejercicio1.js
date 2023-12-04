@@ -93,14 +93,12 @@ function moverseKeys(evento) {
 
     //si es la flecha de la derecha hacemos lo mismo que si le dieramos al botón de siguiente
     if (evento.key === "ArrowRight") {
-        evento.preventDefault();
         let imagenSiguiente = galeria.posicionSiguiente();
         contenedorImagen.style.backgroundImage = "url" + "(" + "/images/" + imagenSiguiente + ".jpg" + ")";
         deshabilitarHabilitar();
     }
     //si es la de la izquierda hacemos lo mismo que si le dieramos al botón de anterior
     else if (evento.key === "ArrowLeft") {
-        evento.preventDefault();
         let imagenAnterior = galeria.posicionAnterior();
         contenedorImagen.style.backgroundImage = "url" + "(" + "/images/" + imagenAnterior + ".jpg" + ")";
         deshabilitarHabilitar();
